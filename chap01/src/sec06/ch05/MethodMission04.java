@@ -20,6 +20,7 @@ public class MethodMission04 {
 
 	public static int getRandomNum(int min, int max) {
 		int n1 = (int) (Math.random() * (max-min)+1) + min;
+		// 메소드 안에서 다른 메소드를 정의(호출) 할 수 있다.
 		return n1;
 	} 
 
