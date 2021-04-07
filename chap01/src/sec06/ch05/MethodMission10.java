@@ -13,7 +13,8 @@ public class MethodMission10 {
 		// 호출과 출력할때 모두 타입이 drink로 변하지 않는다.
 		for(int i=0; i<drinkArr.length; i++) {
 			//for문이 돌면서 새로운 그릇이 생성됐고(new로 새로 선언해줘서)
-			Drink drink = new Drink();
+			Drink drink = new Drink(); // for문이 돌면서 각 방마다 새로운 주소값을 넣는 뜻이다.
+			// 만약에 new가 포문 밖에 있더라면 각 방은 같은 주소를 가지며, 결국 다 같은 값을 가지게 된다.
 			// 새로운 그릇에 arrMenu[i]번쨰의 메뉴 이름이 들어가고
 			drink.nm = arrMenu[i];
 			// 새로운 그릇에 arrPrice[i]번쨰의 가격이 들어가고
