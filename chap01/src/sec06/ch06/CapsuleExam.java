@@ -15,6 +15,8 @@ public class CapsuleExam {
 }
 
 class Human {
+	//(쓰기)메소드 setter, 생성자 / 
+	//(읽기)메소드 getter
 	private int age;
 	private String name;
 	private final static String NAME = "미상";
@@ -22,6 +24,22 @@ class Human {
 	// age멤버필드의 
 	// set은 private타입을 값을 받아오는 기능이다
 	// get은 private타입을 값을 외부로 빼내는 기능이다.
+	// this()는 생성자호출
+	// this=는 멤버필드,멤버메소드에 접근할 때 쓰는것
+	Human() {
+		this(NAME,AGE);
+		//NAME과 AGE생성자를 호출해서  33번 Line에 전달
+	}
+	Human(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	Human(String name) {
+		this(name,AGE);
+	}
+	Human(int age) {
+		this(NAME, age);
+	}
 	public int getAge() {
 		return age;
 	}
@@ -33,19 +51,6 @@ class Human {
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-	Human() {
-		this(NAME,AGE);
-	}
-	Human(String name, int age) {
-		this.name = name;
-		this.age = age;
-	}
-	Human(String name) {
-		this(name,AGE);
-	}
-	Human(int age) {
-		this(NAME, age);
 	}
 	public void whoAmI() {
 		System.out.printf("이름 : %s, age : %d\n",name,age);
