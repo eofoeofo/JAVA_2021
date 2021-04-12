@@ -17,9 +17,13 @@ class Animal extends Object {
 
 	void howling() {
 		System.out.println("운다");
+		runRail();
 	}
 	void cry(Animal animal) {
 		howling();
+	}
+	void runRail() {
+		System.out.println("쳇바퀴를 굴린다.");
 	}
 }
 // 상속, class 자식 extends 부모 {} 

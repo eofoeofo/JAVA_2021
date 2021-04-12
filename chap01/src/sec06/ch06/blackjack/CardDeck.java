@@ -25,4 +25,41 @@ public class CardDeck {
 			System.out.println(CARD_ARR[i]);
 		}
 	}
+
+	private int getRandomIdx() {
+		return (int)(Math.random()*CARD_ARR.length);
+	}
+	public Card getOneCard1() {
+		Card c = null;
+		int idx = 0;
+		do {
+			idx = getRandomIdx();
+			c = CARD_ARR[idx];
+		} while (c == null);
+		CARD_ARR[idx] = null;
+		return c;
+	}
+	public void printAll() {
+		for(int i=0; i<CARD_ARR.length; i++) {
+			System.out.println(CARD_ARR[i]);
+		}
+	}
+	public Card getOneCard() {
+		Card select = null;
+		int rand = (int)(Math.random()*CARD_ARR.length);
+		for(int i=0; i<CARD_ARR.length-1; i++) {
+//			if(CARD_ARR[rand] == CARD_ARR[i]) {
+//				i--;
+//				break;
+//			}
+		}
+		while(CARD_ARR[rand] == null) {
+			if(CARD_ARR[rand] != null) {
+				rand = (int)(Math.random()*CARD_ARR.length);
+			} return select; 
+		}
+		// 랜덤한 값의 주소값을 리턴한다.
+		// 이미 나온 값은 null로 처리, 
+		return select;
+	}
 }

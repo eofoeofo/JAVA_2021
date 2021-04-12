@@ -13,8 +13,18 @@ public class CardMain {
 //		println(c4);
 		
 		CardDeck deck = new CardDeck();
-		deck.deckout();
+//		deck.deckout();
 		
+		// CardDeck객체의 CardDeck타입의 cd
+		CardDeck cd = new CardDeck();
+		
+		// CardDeck 클래스 안에있는 Card타입의 cd.getOneCard 
+//		Card card1 = cd.getOneCard();
+			System.out.println(cd.getOneCard());
+			
+//		cd.printAll();
+		
+		// 타입으로 올수있는건 본인이나 자식?
 	}
 
 	public static void println(String str) {
