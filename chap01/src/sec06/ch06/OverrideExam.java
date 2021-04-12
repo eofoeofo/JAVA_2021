@@ -4,7 +4,7 @@ public class OverrideExam {
 	public static void main(String[] args) {
 		NumBox nb1 = new NumBox(10);
 		NumBox nb2 = new NumBox(10);
-		
+		//타입			  //어느객체인지
 		System.out.println("nb1 == nb2\n" + (nb1 == nb2));
 		System.out.println("nb1.equals(nb2) : " + nb1.equals(nb2));
 	}
